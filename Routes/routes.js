@@ -4,7 +4,7 @@ const usercontrollers = require("../controllers/usercontrollers");
 
 // All Get Routes
 
-Route.get("/", (req,res)=>{
+Route.get("https://vercel.com/vikash-bagras-projects/project-2/", (req,res)=>{
     res.render("index")
 })
 
