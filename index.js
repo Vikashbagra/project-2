@@ -6,6 +6,8 @@ const path = require("path")
 const app = express();
 const Port =  process.env.PORT;
 
+app.use(express.json())
+
 // Routes Conncetion 
 app.use(Route);
 
