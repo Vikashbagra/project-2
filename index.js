@@ -13,6 +13,11 @@ app.use(Route);
 
 // view engine Setup
 
+app.get("/", (req,res)=>{
+    res.send("Your Server is working and static route is working now")
+
+})
+
 const Partials_Path = path.join(__dirname,"./templates/partials");
 const Public_Path = path.join(__dirname,"./public/");
 const Css_path = path.join(__dirname,"./public/css/");
