@@ -4,7 +4,7 @@ const Route =  require("./Routes/routes");
 const path = require("path")
 
 const app = express();
-const Port =  process.env.PORT || 5000;
+const Port =  process.env.PORT;
 
 // Routes Conncetion 
 app.use(Route);
