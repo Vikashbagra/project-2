@@ -4,7 +4,9 @@ const usercontrollers = require("../controllers/usercontrollers");
 
 // All Get Routes
 
-Route.get("/", usercontrollers.IndexGet)
+Route.get("/", (req,res)=>{
+    res.render("index")
+})
 
 Route.get("/contact-us", usercontrollers.ContactGet)
 

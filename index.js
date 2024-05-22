@@ -10,10 +10,10 @@ app.use(express.json())
 
 // Routes Conncetion 
 
-app.get("/", (req,res)=>{
-    res.send("Your Server is working and static route is working now")
+// app.get("/", (req,res)=>{
+//     res.send("Your Server is working and static route is working now")
 
-})
+// })
 app.use(Route);
 
 // view engine Setup
