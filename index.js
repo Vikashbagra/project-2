@@ -9,14 +9,15 @@ const Port =  process.env.PORT || 3000;
 app.use(express.json())
 
 // Routes Conncetion 
-app.use(Route);
-
-// view engine Setup
 
 app.get("/", (req,res)=>{
     res.send("Your Server is working and static route is working now")
 
 })
+app.use(Route);
+
+// view engine Setup
+
 
 const Partials_Path = path.join(__dirname,"./templates/partials");
 const Public_Path = path.join(__dirname,"./public/");
